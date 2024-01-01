@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <span class="d-none" id="username"></span>
+
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+
+            <input id="signupName" class="form-control my-3 text-white" placeholder="Enter your name" type="text">
+            <p class="d-none text-danger" id="usernameAlert">include at least 3 letters</p>
+
+
+            <input id="signupEmail" class="form-control my-3 text-white" placeholder="Enter your email" type="email">
+            <p class="d-none text-danger" id="useremailAlert">name@example.com</p>
+
+
+            <input id="signupPassword" class="form-control my-3 text-white" placeholder="Enter  password" type="password">
+            <p class="d-none text-danger" id="userpasswordAlert">you must strenth your password,from 5 to 15</p>
+
+
+            <p class="d-none text-success" id="confirmMsg">Success</p>
+            <p class="d-none text-success mb-0" id="accountExitMsg">this account is exist ! try another one.</p>
+            <p class="d-none text-success mb-0" id="tryAgainMsg">signup failed ! try again</p>
+
+
+            <button onclick=" signUp()" class="btn btn-outline-info w-100 my-3" id="signupBtn">Sign Up</button>
+            <p class="text-white">You have an account? <a class='text-white' href='index.html'>Signin</a></p>
+
+            <a class="text-white d-none btn btn-outline-success w-25 m-auto" href="index.html" id="signin">Signin</a>
+            </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
